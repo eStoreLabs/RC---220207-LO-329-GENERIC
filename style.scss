@@ -118,6 +118,94 @@ $black: #252525;
       animation: slideright 0.6s ease forwards;
       animation-delay: 0.3s;
     }
+
+    .es-solution {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      &__header,
+      &__subheader,
+      &__text {
+        @include text;
+        text-align: center;
+      }
+
+      &__header,
+      &__subheader {
+        font-weight: bold;
+      }
+
+      &__header {
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+
+      &__subheader {
+        margin-bottom: 15px;
+        @include secondary-header;
+      }
+
+      &__text {
+        @include basic-text;
+      }
+
+      &__single {
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      &__icon {
+        margin: 20px 0;
+      }
+    }
+  }
+
+  .es-solution {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    &__header,
+    &__subheader,
+    &__text {
+      @include text;
+      text-align: center;
+    }
+
+    &__header,
+    &__subheader {
+      font-weight: bold;
+    }
+
+    &__header {
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+
+    &__subheader {
+      margin-bottom: 15px;
+      @include secondary-header;
+    }
+
+    &__text {
+      @include basic-text;
+    }
+
+    &__single {
+      margin: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__icon {
+      margin: 20px 0;
+    }
   }
 
   @media screen and (min-width: 400px) {
@@ -180,6 +268,28 @@ $black: #252525;
         left: 40px;
       }
     }
+
+    .es-solution {
+      margin: 40px 0 0 0;
+
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      &__single {
+        padding: 25px;
+        margin: 0;
+      }
+      &__text {
+        font-size: 18px;
+      }
+      &__subheader {
+        margin-bottom: 32px;
+      }
+      &__icon {
+        margin-top: 28px;
+        margin-bottom: 30px;
+      }
+    }
   }
 
   @media screen and (min-width: 930px) {
@@ -214,6 +324,31 @@ $black: #252525;
       }
       &__text {
         max-width: 345px;
+      }
+    }
+
+    .es-solution {
+      margin: 43px 0 0 0;
+      padding-left: 93px;
+      padding-right: 80px;
+      &__single {
+        max-width: 461px;
+        margin: 0;
+        padding: 46px;
+        &:first-of-type {
+          max-width: 450px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .es-solution {
+      &__single {
+        padding: 0;
+      }
+      &__text {
+        font-size: 22px;
       }
     }
   }
