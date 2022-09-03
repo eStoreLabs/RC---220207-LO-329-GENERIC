@@ -10,9 +10,11 @@
 
 ## PROJECT PREVIEW
 
-![Design preview for the project](https://drive.google.com/file/d/1P8LJkBkRdFXni9NcBrO1gZ5qu2agt4O8/view?usp=sharing)
+![Design preview for the project](https://drive.google.com/file/d/1UgdlmzdePTFXu2yltIBqBJrlZ9yDSTOY/view?usp=sharing)
 
 ### LINKS TO DESIGNS (in .xd or .psd)
+
+![.psd](https://drive.google.com/file/d/10O11mu2s4AaxDqbJkSUbathB_7XnRb7J/view?usp=sharing)
 
 <!-- please enter link to preview designs -->
 
