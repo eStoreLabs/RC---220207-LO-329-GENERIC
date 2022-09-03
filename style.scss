@@ -1,0 +1,244 @@
+$regular: 'Roboto', sans-serif;
+$primary: #0777bd;
+$secondary: #7ec658;
+$tertiary: #f9b206;
+$black: #252525;
+
+@mixin text {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+@mixin basic-text {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+@mixin secondary-header {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+@mixin img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#es-cerave.es-cerave {
+  font-family: $regular;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  color: $black;
+  background-color: #fff;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: $regular;
+  }
+
+  .es-kv {
+    position: relative;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    &__logo {
+      position: absolute;
+      top: 50px;
+      left: 30px;
+      width: 57%;
+    }
+    &__images-container {
+      padding-top: 130px;
+      display: flex;
+      justify-content: center;
+    }
+    &__images-wrapper {
+      position: relative;
+      max-width: 400px;
+      opacity: 0;
+      animation: slidedown 0.6s ease forwards;
+      animation-delay: 0.3s;
+    }
+    &__label {
+      position: absolute;
+      top: 35%;
+      left: 24px;
+      width: 35%;
+      &--second {
+        top: 65%;
+      }
+    }
+    &__product {
+      width: 100%;
+    }
+    &__header,
+    &__subheader,
+    &__text {
+      @include text;
+    }
+    &__header {
+      font-size: 26px;
+      font-weight: 700;
+      color: $primary;
+      &--yellow {
+        color: $tertiary;
+      }
+    }
+    &__subheader {
+      margin: 15px 0;
+    }
+    &__subheader,
+    &__text {
+      @include secondary-header;
+      font-weight: 400;
+    }
+    &__subheader span,
+    &__text {
+      color: $primary;
+    }
+    &__text-container {
+      margin: 20px 5px;
+      opacity: 0;
+      animation: slideright 0.6s ease forwards;
+      animation-delay: 0.3s;
+    }
+  }
+
+  @media screen and (min-width: 400px) {
+    .es-kv {
+      &__logo {
+        width: auto;
+      }
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    .es-kv {
+      &__text {
+        max-width: 500px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .es-kv {
+      &__header {
+        margin-bottom: 33px;
+        font-size: 34px;
+      }
+      &__subheader {
+        margin-top: 0;
+        margin-bottom: 26px;
+      }
+      &__content-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      &__text-container,
+      &__images-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      &__images-container {
+        padding: 60px 0 0 0;
+        width: 60%;
+      }
+      &__images-wrapper {
+        max-width: 520px;
+      }
+      &__text-container {
+        margin: 40px 0 40px 40px;
+        width: 40%;
+      }
+      &__label {
+        position: absolute;
+        top: 45%;
+        left: 12px;
+        width: auto;
+        &--second {
+          top: 76%;
+        }
+      }
+      &__logo {
+        left: 40px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 930px) {
+    .es-kv {
+      &__header {
+        font-size: 45px;
+        line-height: 1;
+      }
+      &__logo {
+        left: 93px;
+        top: 147px;
+      }
+      &__text-container {
+        margin: 271px 0 169px 92px;
+        width: 40%;
+      }
+      &__label {
+        position: absolute;
+        top: 44.7%;
+        left: 19px;
+        width: auto;
+        &--second {
+          top: 72.1%;
+          left: 21px;
+        }
+      }
+      &__text-container {
+        width: 38.5%;
+      }
+      &__images-container {
+        padding: 23px 0 0 0;
+      }
+      &__text {
+        max-width: 345px;
+      }
+    }
+  }
+
+  @keyframes slidedown {
+    from {
+      opacity: 0;
+      transform: translateY(-32px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideright {
+    from {
+      opacity: 0.3;
+      transform: translateX(-100px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
