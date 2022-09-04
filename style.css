@@ -334,6 +334,17 @@
     max-width: 500px;
   }
 }
+@media screen and (min-width: 600px) {
+  #es-cerave.es-cerave .es-products__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  #es-cerave.es-cerave .es-products__single {
+    margin: 0 5%;
+  }
+}
 @media screen and (min-width: 768px) {
   #es-cerave.es-cerave .es-kv__header {
     margin-bottom: 33px;
@@ -415,6 +426,9 @@
     line-height: 1.3;
     font-size: 22px;
   }
+  #es-cerave.es-cerave .es-band__single {
+    width: 187px;
+  }
   #es-cerave.es-cerave .es-ingredients {
     display: flex;
   }
@@ -461,15 +475,6 @@
   }
   #es-cerave.es-cerave .es-technology__text {
     margin-bottom: 20px;
-  }
-  #es-cerave.es-cerave .es-products__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  #es-cerave.es-cerave .es-products__single {
-    margin: 0 5%;
   }
 }
 @media screen and (min-width: 930px) {
@@ -526,6 +531,9 @@
   #es-cerave.es-cerave .es-band__icons {
     margin-right: 50px;
   }
+  #es-cerave.es-cerave .es-band__single {
+    width: 250px;
+  }
   #es-cerave.es-cerave .es-ingredients {
     margin-bottom: 40px;
   }
@@ -578,11 +586,25 @@
     margin-left: -20px;
     margin-bottom: 18px;
   }
-  #es-cerave.es-cerave .es-products__product-header--right {
-    margin-left: -108px;
-  }
   #es-cerave.es-cerave .es-products__container {
     padding-left: 63px;
+  }
+  #es-cerave.es-cerave .es-products__button {
+    margin-top: 45px;
+    margin-left: -20px;
+    padding: 11px 39px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #es-cerave.es-cerave .es-solution__single {
+    padding: 0;
+  }
+  #es-cerave.es-cerave .es-solution__text {
+    font-size: 22px;
+  }
+  #es-cerave.es-cerave .es-products__product-header--right {
+    margin-left: -108px;
   }
   #es-cerave.es-cerave .es-products__single {
     max-width: 464px;
@@ -601,20 +623,6 @@
   }
   #es-cerave.es-cerave .es-products__text--right {
     margin-left: -112px;
-  }
-  #es-cerave.es-cerave .es-products__button {
-    margin-top: 45px;
-    margin-left: -20px;
-    padding: 11px 39px;
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  #es-cerave.es-cerave .es-solution__single {
-    padding: 0;
-  }
-  #es-cerave.es-cerave .es-solution__text {
-    font-size: 22px;
   }
 }
 @-webkit-keyframes slidedown {
