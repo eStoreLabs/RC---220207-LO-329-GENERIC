@@ -219,6 +219,55 @@
      object-position: right;
   margin-bottom: 40px;
 }
+#es-cerave.es-cerave .es-technology {
+  margin: 0;
+  padding: 0;
+}
+#es-cerave.es-cerave .es-technology__single {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+#es-cerave.es-cerave .es-technology__single:first-of-type .es-technology__text-container {
+  background-color: #0777bd;
+}
+#es-cerave.es-cerave .es-technology__single:nth-of-type(2) .es-technology__text-container {
+  background-color: #045181;
+}
+#es-cerave.es-cerave .es-technology__img {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#es-cerave.es-cerave .es-technology__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 20px 10px;
+}
+#es-cerave.es-cerave .es-technology__header, #es-cerave.es-cerave .es-technology__text {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  color: #fff;
+  text-align: center;
+}
+#es-cerave.es-cerave .es-technology__header {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+#es-cerave.es-cerave .es-technology__text {
+  font-weight: 300;
+  font-size: 18px;
+  font-size: 16px;
+}
 @media screen and (min-width: 400px) {
   #es-cerave.es-cerave .es-kv__logo {
     width: auto;
@@ -329,7 +378,7 @@
   #es-cerave.es-cerave .es-ingredients__header {
     margin-top: 35px;
     margin-bottom: 49px;
-    font-size: 45px;
+    font-size: 36px;
   }
   #es-cerave.es-cerave .es-ingredients__single {
     margin-top: 21px;
@@ -338,6 +387,24 @@
   }
   #es-cerave.es-cerave .es-ingredients__image {
     margin-top: 92px;
+  }
+  #es-cerave.es-cerave .es-technology {
+    display: flex;
+    flex-direction: row;
+  }
+  #es-cerave.es-cerave .es-technology__single {
+    width: 50%;
+  }
+  #es-cerave.es-cerave .es-technology__text-container {
+    justify-content: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #es-cerave.es-cerave .es-technology__header {
+    margin-top: 20px;
+  }
+  #es-cerave.es-cerave .es-technology__text {
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 930px) {
@@ -409,6 +476,29 @@
   #es-cerave.es-cerave .es-ingredients__text {
     padding: 7px 0 0 23px;
     max-width: 407px;
+    font-size: 18px;
+  }
+  #es-cerave.es-cerave .es-ingredients__header {
+    font-size: 45px;
+  }
+  #es-cerave.es-cerave .es-technology__single {
+    margin-top: 6px;
+  }
+  #es-cerave.es-cerave .es-technology__header {
+    margin: 0;
+    padding-top: 49px;
+    margin-bottom: 26px;
+    margin-left: -14px;
+    font-size: 22px;
+  }
+  #es-cerave.es-cerave .es-technology__text-container {
+    padding-left: 0;
+    padding: 4px 10px;
+    padding-top: 3px;
+  }
+  #es-cerave.es-cerave .es-technology__text {
+    margin-bottom: 0;
+    max-width: 258px;
     font-size: 18px;
   }
 }

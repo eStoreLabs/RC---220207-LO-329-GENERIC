@@ -252,6 +252,54 @@ $black: #252525;
     }
   }
 
+  .es-technology {
+    margin: 0;
+    padding: 0;
+    &__single {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      &:first-of-type {
+        .es-technology__text-container {
+          background-color: $primary;
+        }
+      }
+      &:nth-of-type(2) {
+        .es-technology__text-container {
+          background-color: #045181;
+        }
+      }
+    }
+    &__img {
+      width: 50%;
+      object-fit: cover;
+    }
+    &__text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      padding: 20px 10px;
+    }
+    &__header,
+    &__text {
+      @include text;
+      color: #fff;
+      text-align: center;
+    }
+    &__header {
+      @include secondary-header;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    &__text {
+      @include basic-text;
+      font-size: 16px;
+    }
+  }
+
   @media screen and (min-width: 400px) {
     .es-kv {
       &__logo {
@@ -367,12 +415,6 @@ $black: #252525;
         flex-direction: column;
         justify-content: center;
       }
-      &__text-container {
-        // width: 38%;
-      }
-      &__image-container {
-        // width: auto;
-      }
       &__image {
         margin-bottom: 0;
       }
@@ -383,7 +425,7 @@ $black: #252525;
       &__header {
         margin-top: 35px;
         margin-bottom: 49px;
-        font-size: 45px;
+        font-size: 36px;
       }
       &__single {
         margin-top: 21px;
@@ -392,6 +434,25 @@ $black: #252525;
       }
       &__image {
         margin-top: 92px;
+      }
+    }
+
+    .es-technology {
+      display: flex;
+      flex-direction: row;
+      &__single {
+        width: 50%;
+      }
+      &__text-container {
+        justify-content: flex-start;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      &__header {
+        margin-top: 20px;
+      }
+      &__text {
+        margin-bottom: 20px;
       }
     }
   }
@@ -472,6 +533,32 @@ $black: #252525;
       &__text {
         padding: 7px 0 0 23px;
         max-width: 407px;
+        font-size: 18px;
+      }
+      &__header {
+        font-size: 45px;
+      }
+    }
+
+    .es-technology {
+      &__single {
+        margin-top: 6px;
+      }
+      &__header {
+        margin: 0;
+        padding-top: 49px;
+        margin-bottom: 26px;
+        margin-left: -14px;
+        font-size: 22px;
+      }
+      &__text-container {
+        padding-left: 0;
+        padding: 4px 10px;
+        padding-top: 3px;
+      }
+      &__text {
+        margin-bottom: 0;
+        max-width: 258px;
         font-size: 18px;
       }
     }
