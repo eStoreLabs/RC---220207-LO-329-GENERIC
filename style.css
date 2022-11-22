@@ -236,7 +236,8 @@
   background-color: #045181;
 }
 #es-cerave.es-cerave .es-technology__img {
-  width: 50%;
+  min-width: 50%;
+  min-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -245,7 +246,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  min-width: 50%;
   padding: 20px 10px;
 }
 #es-cerave.es-cerave .es-technology__header, #es-cerave.es-cerave .es-technology__text {

@@ -272,7 +272,8 @@ $black: #252525;
       }
     }
     &__img {
-      width: 50%;
+      min-width: 50%;
+      min-height: 100%;
       object-fit: cover;
     }
     &__text-container {
@@ -280,7 +281,7 @@ $black: #252525;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 50%;
+      min-width: 50%;
       padding: 20px 10px;
     }
     &__header,
